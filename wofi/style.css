@@ -1,0 +1,40 @@
+window {
+    width: 500px;
+    height: 300px;
+    background-color: #232324;
+    border-radius: 0px;
+}
+#outer-box {
+    margin: 10px;
+}
+#input {
+    background-color: #1a1a1a;
+    color: #cdd6f4;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+#inner-box {
+    padding: 0;
+}
+#text {
+    color: #4d4c4b;
+    font-size: 15px;
+    padding: 6px 10px;
+}
+#img {
+    margin-right: 4px;
+}
+#entry {
+    padding: 8px 16px;
+}
+#entry:selected {
+    background-color: #232324;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+}
+#entry:selected #text {
+    color: #cdd6f4;
+}
