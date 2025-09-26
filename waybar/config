@@ -1,0 +1,132 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 5,
+    "spacing": 3,
+    "margin-top": 3,
+    "margin-left": 3,
+    "margin-right": 3,
+    
+    "modules-left": ["memory", "hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock#date", "clock#time"],
+    "modules-right": ["backlight", "pulseaudio", "bluetooth", "network", "battery", "tray", "custom/screenshot"],
+    
+    "memory": {
+        "interval": 30,
+        "format": "RAM {used:0.1f}G/{total:0.1f}G",
+        "format-alt": "RAM {percentage}%",
+        "max-length": 20,
+        "tooltip": false
+    },
+    
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format-icons": {
+            "1": "●",
+            "2": "●", 
+            "3": "●",
+            "4": "●",
+            "5": "●",
+            "6": "●",
+            "7": "●",
+            "8": "●",
+            "9": "●",
+            "10": "●",
+            "urgent": "⚠",
+            "focused": "◉",
+            "default": "○"
+        }
+    },
+    
+    "hyprland/window": {
+        "format": "{}",
+        "rewrite": {
+            "(.*) - Visual Studio Code": "VS Code",
+            "(.*) — Dolphin": "Files",
+            "(.*) - Discord": "Discord",
+            "(.*) - Spotify": "Spotify",
+            "(.*) - Terminal": "⚡ Terminal",
+            "(.*) - Alacritty": "⚡ Terminal",
+            "(.*) - Kitty": "⚡ Terminal",
+            "(.*)": "$1"
+        },
+        "separate-outputs": true,
+        "max-length": 50
+    },
+    
+    "clock#time": {
+        "timezone": "Asia/Jakarta",
+        "format": "{:%H:%M}"
+     },
+    
+    "clock#date": {
+        "timezone": "Asia/Jakarta",
+        "format": "{:%Y-%m-%d}",
+        "format-alt": "{:%A, %B %d}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "☀ {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-scroll-up": "brightnessctl set +5%",
+        "on-scroll-down": "brightnessctl set 5%-"
+    },
+    
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}%",
+        "format-charging": "{capacity}%",
+        "format-plugged": "{capacity}%",
+        "format-alt": "{time}",
+        "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    
+    "network": {
+        "format-wifi": "˒﹚) {essid}",
+        "format-ethernet": "",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    
+    "bluetooth": {
+        "format": "{status}",
+        "format-connected": "{device_alias}",
+        "format-connected-battery": "{device_alias} ϟ {device_battery_percentage}%",
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+        "on-click": "blueman-manager",
+        "on-click-right": "rfkill toggle bluetooth"
+    },
+    
+    "pulseaudio": {
+        "format": "♪ {volume}%",
+        "format-bluetooth": "♪ {volume}%",
+        "format-bluetooth-muted": "",
+        "format-muted": "",
+        "format-source": "{volume}%",
+        "format-source-muted": "",
+        "on-click": "pavucontrol"
+    },
+    
+    "tray": {
+        "spacing": 3
+    },
+    
+    "custom/screenshot": {
+        "format": "⌞ ⌝ Screenshot",
+        "tooltip": "Screenshot",
+        "on-click": "grimshot --notify copy area",        
+        "on-click-right": "grimshot --notify save area ~/Pictures/$(date +'%Y%m%d_%H%M%S').png"
+    }
+}

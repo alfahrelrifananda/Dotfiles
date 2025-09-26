@@ -1,0 +1,148 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces {
+    background: #1a1a1a;
+    border-radius: 10px;
+    margin: 0px;
+    border: 1px solid #333;
+    padding: 0px;
+    margin-right: 0px;
+}
+
+#workspaces button {
+    padding: 3px 8px;
+    background-color: transparent;
+    color: #808080;
+    border-radius: 10px;
+    transition: all 0s ease;
+    font-size: 16px;
+    margin: 0px;
+}
+
+#workspaces button:hover {
+    color: #fff;
+}
+
+#workspaces button.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    background: #f38ba8;
+    color: #000;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+#window {
+    background: #1a1a1a;
+    color: #fccaca;
+    border-radius: 10px;
+    padding: 3px 8px;
+    margin: 0px 2px;
+    font-weight: 500;
+    border: 1px solid #333;
+}
+
+#clock {
+    background: #1a1a1a;
+    color: #b0acac;
+    border-radius: 10px;
+    padding: 3px 8px;
+    margin: 0px;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+#memory,
+#battery,
+#backlight,
+#network,
+#pulseaudio,
+#bluetooth,
+#custom-screenshot,
+#tray {
+    background: #1a1a1a;
+    color: #cdd6f4;
+    border-radius: 10px;
+    padding: 2px 8px;
+    margin: 0px 1px;
+    border: 1px solid #333;
+}
+
+#memory {
+    color: #cbf0ad;
+}
+
+#network {
+    color: #9df5e3;
+}
+
+#bluetooth {
+    color: #77fce2;
+}
+
+#backlight {
+    color: #f5f556;
+}
+
+#custom-screenshot {
+    color: #faa682;
+}
+
+#pulseaudio {
+    color: #a4fa75;
+}
+#battery.charging {
+    background: #a6e3a1;
+    color: #000;
+}
+
+#battery.critical:not(.charging) {
+    background: #f38ba8;
+    color: #000;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+#network.disconnected {
+    background: #6c7086;
+    color: #fff;
+}
+
+#pulseaudio.muted {
+    background: #6c7086;
+    color: #fff;
+}
+
+tooltip {
+    background: #1a1a1a;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+tooltip label {
+    color: #cdd6f4;
+}
+
+@keyframes blink {
+    to {
+        opacity: 0.5;
+    }
+}
