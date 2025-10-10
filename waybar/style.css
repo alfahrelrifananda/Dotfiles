@@ -19,7 +19,7 @@ window#waybar.hidden {
 
 #workspaces {
     background: #1a1a1a;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 0px;
     border: 1px solid #333;
     padding: 0px;
@@ -30,7 +30,7 @@ window#waybar.hidden {
     padding: 3px 8px;
     background-color: transparent;
     color: #808080;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: all 0s ease;
     font-size: 16px;
     margin: 0px;
@@ -46,25 +46,23 @@ window#waybar.hidden {
 }
 
 #workspaces button.urgent {
-    background: #f38ba8;
-    color: #000;
     animation: blink 0.5s linear infinite alternate;
 }
 
 #window {
     background: #1a1a1a;
     color: #fccaca;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 3px 8px;
     margin: 0px 2px;
     font-weight: 500;
     border: 1px solid #333;
 }
 
-#clock {
+#clock, #custom-weather {
     background: #1a1a1a;
     color: #b0acac;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 3px 8px;
     margin: 0px;
     font-weight: bold;
@@ -81,7 +79,7 @@ window#waybar.hidden {
 #tray {
     background: #1a1a1a;
     color: #cdd6f4;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 2px 8px;
     margin: 0px 1px;
     border: 1px solid #333;
@@ -104,11 +102,14 @@ window#waybar.hidden {
 }
 
 #custom-screenshot {
-    color: #faa682;
+    color: #ffffff;
 }
 
+#battery {
+    color: #C8F7BA;
+}
 #pulseaudio {
-    color: #a4fa75;
+    color: #F7BAD7;
 }
 #battery.charging {
     background: #a6e3a1;
@@ -121,19 +122,9 @@ window#waybar.hidden {
     animation: blink 0.5s linear infinite alternate;
 }
 
-#network.disconnected {
-    background: #6c7086;
-    color: #fff;
-}
-
-#pulseaudio.muted {
-    background: #6c7086;
-    color: #fff;
-}
-
 tooltip {
     background: #1a1a1a;
-    border-radius: 8px;
+    border-radius: 5px;
     border: 1px solid #333;
 }
 
