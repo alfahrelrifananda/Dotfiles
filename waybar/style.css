@@ -21,7 +21,6 @@ window#waybar.hidden {
     background: #1a1a1a;
     border-radius: 5px;
     margin: 0px;
-    border: 1px solid #333;
     padding: 0px;
     margin-right: 0px;
 }
@@ -30,10 +29,9 @@ window#waybar.hidden {
     padding: 3px 8px;
     background-color: transparent;
     color: #808080;
-    border-radius: 5px;
-    transition: all 0s ease;
     font-size: 16px;
     margin: 0px;
+    border-bottom: 1px solid transparent;
 }
 
 #workspaces button:hover {
@@ -43,6 +41,7 @@ window#waybar.hidden {
 #workspaces button.active {
     color: #fff;
     font-weight: bold;
+    border-bottom: 1px solid #ffffff;
 }
 
 #workspaces button.urgent {
@@ -51,12 +50,11 @@ window#waybar.hidden {
 
 #window {
     background: #1a1a1a;
-    color: #fccaca;
+    color: #F7BAD7;
     border-radius: 5px;
     padding: 3px 8px;
-    margin: 0px 2px;
+    margin: 0px;
     font-weight: 500;
-    border: 1px solid #333;
 }
 
 #clock, #custom-weather {
@@ -66,9 +64,9 @@ window#waybar.hidden {
     padding: 3px 8px;
     margin: 0px;
     font-weight: bold;
-    border: 1px solid #333;
 }
 
+#custom-media, 
 #memory,
 #battery,
 #backlight,
@@ -81,16 +79,20 @@ window#waybar.hidden {
     color: #cdd6f4;
     border-radius: 5px;
     padding: 2px 8px;
-    margin: 0px 1px;
-    border: 1px solid #333;
+    margin: 0px;
+    border: 1px solid transparent;
 }
 
+#tray {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
 #memory {
-    color: #cbf0ad;
+    color: #ffffff;
 }
 
 #network {
-    color: #9df5e3;
+    color: #F7BAD7;
 }
 
 #bluetooth {
@@ -98,7 +100,7 @@ window#waybar.hidden {
 }
 
 #backlight {
-    color: #f5f556;
+    color: #C8F7BA;
 }
 
 #custom-screenshot {
@@ -111,29 +113,16 @@ window#waybar.hidden {
 #pulseaudio {
     color: #F7BAD7;
 }
-#battery.charging {
-    background: #a6e3a1;
-    color: #000;
-}
-
-#battery.critical:not(.charging) {
-    background: #f38ba8;
-    color: #000;
-    animation: blink 0.5s linear infinite alternate;
+#custom-screenshot {
+    color: #9df5e3;
 }
 
 tooltip {
     background: #1a1a1a;
     border-radius: 5px;
-    border: 1px solid #333;
 }
 
 tooltip label {
     color: #cdd6f4;
 }
 
-@keyframes blink {
-    to {
-        opacity: 0.5;
-    }
-}

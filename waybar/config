@@ -1,18 +1,18 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 25,
+    "height": 30,
     "spacing": 3,
     "margin-top": 3,
     "margin-left": 3,
     "margin-right": 3,
     
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-center": ["clock#time", "clock#date", "custom/weather"],
-    "modules-right": ["backlight", "pulseaudio", "bluetooth", "battery", "network", "tray", "memory", "custom/screenshot"],
+    "modules-left": ["custom/weather","hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["backlight", "pulseaudio", "bluetooth", "battery", "network", "memory", "custom/screenshot", "tray"],
   "memory": {
     "interval": 30,
-    "format": "󰍛 RAM {percentage}%",
+    "format": "󰍛 {percentage}%",
     "max-length": 20,
     "tooltip": false,
   },
@@ -44,7 +44,11 @@
       "(.*)": "$1"
     },
     "separate-outputs": true,
-    "max-length": 50
+    "max-length": 30
+  },
+  "clock": {
+    "timezone":"Asia/Jakarta",
+    "format" : "{:%d %B %Y - %H:%M}",
   },
   "clock#time": {
     "timezone": "Asia/Jakarta",
@@ -62,6 +66,22 @@
     "interval": 3600,
     "exec": "~/.config/waybar/waybar-wttr.py",
     "return-type": "json"
+  },
+  "custom/media": {
+    "format": "{}",
+    "return-type": "json",
+    "max-length": 15,
+    "format-icons": {
+      "spotify": "",
+      "default": ""
+    },
+    "escape": true,
+    "exec": "$HOME/.config/waybar/mediaplayer.py",
+    "interval": 2,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-scroll-up": "playerctl volume 0.05+",
+    "on-scroll-down": "playerctl volume 0.05-"
   },
   "backlight": {
     "device": "intel_backlight",
@@ -88,11 +108,11 @@
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
     "format-disconnected": "Disconnected",
-    "max-length": 7,
+    "max-length": 10,
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
   "bluetooth": {
-    "format": "󰂯 {status}",
+    "format": "󰂯 Disconnected",
     "format-connected": "󰂯",
     "format-connected-battery": "󰂯 {device_battery_percentage}%",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",

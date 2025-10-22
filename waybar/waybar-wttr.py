@@ -3,25 +3,21 @@ import json
 import requests
 from datetime import datetime
 
-# === CONFIG ===
 CITY = "Surakarta"
 API_KEY = "eb235674bb746629cb773fb77ba13c75"
 UNITS = "metric"
 LANG = "en"
-# ===============
 
 url = f"https://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units={UNITS}&lang={LANG}"
 
 try:
     weather = requests.get(url, timeout=5).json()
 
-    # Basic data
     temp = round(weather["main"]["temp"])
     feels = round(weather["main"]["feels_like"])
     desc = weather["weather"][0]["description"].capitalize()
     icon = weather["weather"][0]["icon"]
 
-    # Simple icons mapping
     ICONS = {
         "01d": "☀️", "01n": "🌙",
         "02d": "⛅", "02n": "☁️",
@@ -36,7 +32,6 @@ try:
 
     emoji = ICONS.get(icon, "🌈")
 
-    # Tooltip with details
     tooltip = (
         f"<b>{CITY}</b>\n"
         f"{desc}\n"
@@ -51,7 +46,7 @@ try:
     }
 
 except Exception as e:
-    data = {"text": "⚠️", "tooltip": str(e)}
+    data = {"text": "null", "tooltip": str(e)}
 
 print(json.dumps(data))
 
