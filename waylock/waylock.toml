@@ -1,0 +1,47 @@
+# Waylock config matching Waybar style
+
+[colors]
+# Background color matching Waybar
+background = "1e1e2e"
+
+# Input field colors
+input-background = "1e1e2e"
+input-border = "6c7086"
+input-border-focused = "cdd6f4"
+input-text = "cdd6f4"
+input-text-placeholder = "6c7086"
+
+# Message colors
+message-text = "cdd6f4"
+message-background = "1e1e2e"
+message-border = "6c7086"
+
+# Failed attempt colors
+message-fail-text = "f38ba8"
+message-fail-background = "1e1e2e"
+message-fail-border = "f38ba8"
+
+[ui]
+# Font matching Waybar
+font-family = "JetBrains Mono"
+font-size = 16
+
+# Input field settings
+input-width = 300
+input-height = 40
+
+# Message settings
+message-margin = 20
+
+# Border settings
+border-width = 2
+border-radius = 15
+
+# Show asterisks for password
+show-password-dots = true
+
+# Placeholder text
+placeholder-text = "Enter password..."
+
+# Layout
+layout = "center"
