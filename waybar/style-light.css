@@ -3,12 +3,13 @@
     border-radius: 0;
     font-family: "JetBrains Mono", monospace;
     font-size: 13px;
+    font-weight: bold;
     min-height: 0;
 }
 
 window#waybar {
     background-color: transparent;
-    color: #ffffff;
+    color: #3a3a3a;
     transition-property: background-color;
     transition-duration: 0.5s;
 }
@@ -18,7 +19,7 @@ window#waybar.hidden {
 }
 
 #workspaces {
-    background: #1a1a1a;
+    background: #e8e8e8;
     border-radius: 5px;
     margin: 0px;
     padding: 0px;
@@ -28,20 +29,20 @@ window#waybar.hidden {
 #workspaces button {
     padding: 3px 8px;
     background-color: transparent;
-    color: #808080;
+    color: #606060;
     font-size: 16px;
     margin: 0px;
     border-bottom: 2px solid transparent;
 }
 
 #workspaces button:hover {
-    color: #fff;
+    color: #1a1a1a;
 }
 
 #workspaces button.active {
-    color: #fff;
+    color: #1a1a1a;
     font-weight: bold;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #1a1a1a;
 }
 
 #workspaces button.urgent {
@@ -49,8 +50,8 @@ window#waybar.hidden {
 }
 
 #window {
-    background: #1a1a1a;
-    color: #F7BAD7;
+    background: #e8e8e8;
+    color: #920362;
     border-radius: 5px;
     padding: 3px 8px;
     margin: 0px;
@@ -58,8 +59,8 @@ window#waybar.hidden {
 }
 
 #clock, #custom-weather {
-    background: #1a1a1a;
-    color: #b0acac;
+    background: #e8e8e8;
+    color: #4a4a4a;
     border-radius: 5px;
     padding: 3px 8px;
     margin: 0px;
@@ -75,8 +76,8 @@ window#waybar.hidden {
 #bluetooth,
 #custom-screenshot,
 #tray {
-    background: #1a1a1a;
-    color: #cdd6f4;
+    background: #e8e8e8;
+    color: #2a2a2a;
     border-radius: 5px;
     padding: 2px 8px;
     margin: 0px;
@@ -84,45 +85,48 @@ window#waybar.hidden {
 }
 
 #tray {
-  border: 1px solid #ffffff;
-  border-radius: 50%;
+    border: 1px solid #d0d0d0;
+    border-radius: 50%;
 }
+
 #memory {
-    color: #ffffff;
+    color: #5a5a5a;
 }
 
 #network {
-    color: #F7BAD7;
+    color: #920362;
 }
 
 #bluetooth {
-    color: #77fce2;
+    color: #0291a5;
 }
 
 #backlight {
-    color: #C8F7BA;
+    color: #03b703;
 }
 
 #custom-screenshot {
-    color: #ffffff;
+    color: #0291a5;
 }
 
 #battery {
-    color: #C8F7BA;
+    color: #03b703;
 }
+
 #pulseaudio {
-    color: #F7BAD7;
+    color: #920362;
 }
+
 #custom-screenshot {
-    color: #9df5e3;
+    color: #5ac5d4;
 }
 
 tooltip {
-    background: #1a1a1a;
+    background: #e8e8e8;
     border-radius: 5px;
+    border: 1px solid #d0d0d0;
 }
 
 tooltip label {
-    color: #cdd6f4;
+    color: #5a5a5a;
 }
-

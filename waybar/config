@@ -1,4 +1,5 @@
 {
+  "style": "/home/rel/.config/waybar/style-current.css",
     "layer": "top",
     "position": "top",
     "height": 30,
@@ -48,7 +49,8 @@
   },
   "clock": {
     "timezone":"Asia/Jakarta",
-    "format" : "{:%d %B %Y - %H:%M}",
+    "format" : "{:%d %B %Y • %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "clock#time": {
     "timezone": "Asia/Jakarta",
