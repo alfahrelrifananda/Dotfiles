@@ -1,22 +1,25 @@
 {
   "style": "/home/rel/.config/waybar/style-current.css",
-    "layer": "top",
-    "position": "top",
-    "height": 30,
-    "spacing": 3,
-    "margin-top": 3,
-    "margin-left": 3,
-    "margin-right": 3,
-    
-    "modules-left": ["custom/weather","hyprland/workspaces", "hyprland/window"],
-    "modules-center": ["clock"],
-    "modules-right": ["backlight", "pulseaudio", "bluetooth", "battery", "network", "memory", "custom/screenshot", "tray"],
+  "layer": "top",
+  "position": "top",
+  "height": 25,
+  "spacing": 3,
+  "margin-top": 3,
+  "margin-left": 3,
+  "margin-right": 3,
+  "font": "Font Awesome 6 Free Solid 10",
+
+  "modules-left": ["custom/weather","hyprland/workspaces","hyprland/window"],
+  "modules-center": [""],
+  "modules-right": ["backlight","pulseaudio","bluetooth","battery","network","memory","tray","clock"],
+
   "memory": {
     "interval": 30,
     "format": "󰍛 {percentage}%",
     "max-length": 20,
     "tooltip": false,
   },
+  
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
@@ -36,6 +39,7 @@
       "default": "󰝥"
     }
   },
+
   "hyprland/window": {
     "format": "{}",
     "rewrite": {
@@ -47,21 +51,13 @@
     "separate-outputs": true,
     "max-length": 30
   },
+
   "clock": {
-    "timezone":"Asia/Jakarta",
-    "format" : "{:%d %B %Y • %H:%M}",
+    "timezone": "Asia/Jakarta",
+    "format": "{:%d %B %Y • %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
-  "clock#time": {
-    "timezone": "Asia/Jakarta",
-    "format": "{:%H:%M}"
-  },
-  "clock#date": {
-    "timezone": "Asia/Jakarta",
-    "format": "{:%d %B %Y}",
-    "format-alt": "{:%Y-%d-%m}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-  },
+
   "custom/weather": {
     "format": "{}",
     "tooltip": true,
@@ -69,6 +65,7 @@
     "exec": "~/.config/waybar/waybar-wttr.py",
     "return-type": "json"
   },
+
   "custom/media": {
     "format": "{}",
     "return-type": "json",
@@ -85,6 +82,7 @@
     "on-scroll-up": "playerctl volume 0.05+",
     "on-scroll-down": "playerctl volume 0.05-"
   },
+
   "backlight": {
     "device": "intel_backlight",
     "format": "󰃞 {percent}%",
@@ -92,6 +90,7 @@
     "on-scroll-up": "brightnessctl set +5%",
     "on-scroll-down": "brightnessctl set 5%-"
   },
+
   "battery": {
     "states": {
       "warning": 30,
@@ -102,8 +101,9 @@
     "format-plugged": " {capacity}%",
     "format-alt": "{time}",
     "format-full": " {capacity}%",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": ["","","","",""]
   },
+
   "network": {
     "format-wifi": " {essid}",
     "format-ethernet": "󰈀",
@@ -113,6 +113,7 @@
     "max-length": 10,
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
+
   "bluetooth": {
     "format": "󰂯 Disconnected",
     "format-connected": "󰂯",
@@ -124,6 +125,7 @@
     "on-click": "blueman-manager",
     "on-click-right": "rfkill toggle bluetooth"
   },
+
   "pulseaudio": {
     "format": " {volume}%",
     "format-bluetooth": " {volume}%",
@@ -133,13 +135,16 @@
     "format-source-muted": "󰝟",
     "on-click": "pavucontrol"
   },
+
   "tray": {
     "spacing": 3
   },
+
   "custom/screenshot": {
-    "format": "󰹑",
+    "format": "PrtSc",
     "tooltip": "Screenshot",
     "on-click": "grimshot --notify copy area",
     "on-click-right": "grimshot --notify save area ~/Pictures/$(date +'%Y%m%d_%H%M%S').png"
   }
 }
+

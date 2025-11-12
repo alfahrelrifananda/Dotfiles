@@ -1,40 +1,87 @@
 window {
     width: 500px;
-    height: 300px;
-    background-color: #232324;
-    border-radius: 0px;
+    height: 320px;
+    background-color: rgba(24, 24, 32, 0.85);
+    border-radius: 8px;
+    border: 1px solid rgba(150, 150, 180, 0.25);
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    transition: all 0.2s ease;
 }
+
 #outer-box {
-    margin: 10px;
+    margin: 8px;
 }
+
 #input {
-    background-color: #1a1a1a;
+    background: rgba(40, 40, 55, 0.7);
     color: #cdd6f4;
-    border-radius: 10px;
-    padding: 8px 16px;
-    margin-bottom: 8px;
-    font-size: 16px;
+    border: 1px solid rgba(100, 100, 130, 0.3);
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
 }
+
+#input:focus {
+    border-color: #89b4fa; /* blue accent */
+    background: rgba(50, 50, 70, 0.8);
+}
+
 #inner-box {
     padding: 0;
 }
-#text {
-    color: #4d4c4b;
-    font-size: 15px;
-    padding: 6px 10px;
-}
-#img {
-    margin-right: 4px;
-}
+
+/* Entry styling */
 #entry {
-    padding: 8px 16px;
+    padding: 8px 14px;
+    margin: 3px 0;
+    border-radius: 6px;
+    transition: all 0.15s ease-in-out;
 }
-#entry:selected {
-    background-color: #232324;
-    outline: none;
-    color: #fff;
-    border-radius: 10px;
+
+/* Default text color */
+#text {
+    color: #a6adc8;
+    font-size: 14px;
+    padding: 4px 8px;
 }
+
+/* Hover & Selected effects with color rotation */
+#entry:selected:nth-child(3n+1) {
+    background-color: rgba(203, 166, 247, 0.25); /* purple */
+    color: #cba6f7;
+}
+
+#entry:selected:nth-child(3n+2) {
+    background-color: rgba(137, 180, 250, 0.25); /* blue */
+    color: #89b4fa;
+}
+
+#entry:selected:nth-child(3n) {
+    background-color: rgba(166, 227, 161, 0.25); /* green */
+    color: #a6e3a1;
+}
+
 #entry:selected #text {
-    color: #cdd6f4;
+    color: inherit;
+    font-weight: 500;
 }
+
+#img {
+    margin-right: 6px;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 3px rgba(200, 200, 255, 0.2));
+}
+
+/* Smooth subtle animation */
+#entry:selected {
+    transform: scale(1.02);
+}
+
+/* Optional: add blur for fancy look */
+window {
+    backdrop-filter: blur(12px);
+}
+

@@ -1,3 +1,4 @@
+/* === Global === */
 * {
     border: none;
     border-radius: 0;
@@ -7,66 +8,81 @@
 }
 
 window#waybar {
-    background-color: transparent;
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: 0.5s;
+    background: transparent;
+    color: #e0def4;
+    border: 1px solid rgba(150, 150, 180, 0.25);
+    border-radius: 6px;
+    padding: 3px 6px;
+    margin: 3px 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* === Hidden Waybar === */
 window#waybar.hidden {
-    opacity: 0.2;
+    opacity: 0.3;
+    transition: opacity 0.4s ease;
 }
 
+/* === Workspaces === */
 #workspaces {
-    background: #1a1a1a;
-    border-radius: 5px;
-    margin: 0px;
-    padding: 0px;
-    margin-right: 0px;
+    background: rgba(40, 40, 55, 0.7);
+    border-radius: 4px;
+    padding: 1px;
 }
 
 #workspaces button {
-    padding: 3px 8px;
-    background-color: transparent;
-    color: #808080;
-    font-size: 16px;
-    margin: 0px;
-    border-bottom: 2px solid transparent;
+    color: #7f849c;
+    background: transparent;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
 }
 
 #workspaces button:hover {
-    color: #fff;
+    color: #cba6f7;
+    background: rgba(80, 80, 110, 0.5);
 }
 
 #workspaces button.active {
-    color: #fff;
-    font-weight: bold;
-    border-bottom: 2px solid #ffffff;
+    color: #cba6f7;
+    background: rgba(120, 120, 170, 0.4);
+    font-weight: 600;
 }
 
 #workspaces button.urgent {
-    animation: blink 0.5s linear infinite alternate;
-}
-
-#window {
-    background: #1a1a1a;
-    color: #F7BAD7;
-    border-radius: 5px;
-    padding: 3px 8px;
-    margin: 0px;
-    font-weight: 500;
-}
-
-#clock, #custom-weather {
-    background: #1a1a1a;
-    color: #b0acac;
-    border-radius: 5px;
-    padding: 3px 8px;
-    margin: 0px;
+    background: #f38ba8;
+    color: #1e1e2e;
     font-weight: bold;
 }
 
-#custom-media, 
+/* === Window Title === */
+#window {
+    background: rgba(40, 40, 55, 0.7);
+    color: #cdd6f4;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* === Clock & Weather (Reversed Clock) === */
+#custom-weather {
+    background: rgba(40, 40, 55, 0.7);
+    border-radius: 4px;
+    color: #f5e0dc;
+    padding: 2px 6px;
+    font-weight: 600;
+}
+
+#clock {
+    background: #f5e0dc;
+    border-radius: 4px;
+    color: #1e1e2e;
+    padding: 2px 6px;
+    font-weight: 600;
+}
+
+/* === Modules Right === */
 #memory,
 #battery,
 #backlight,
@@ -75,54 +91,56 @@ window#waybar.hidden {
 #bluetooth,
 #custom-screenshot,
 #tray {
-    background: #1a1a1a;
-    color: #cdd6f4;
-    border-radius: 5px;
-    padding: 2px 8px;
-    margin: 0px;
-    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-left: 3px;
+    transition: all 0.2s ease-in-out;
+    color: #1e1e2e; /* dark text on colored background */
 }
 
+/* === Individual Background Colors (reversed) === */
+#memory { background: #f9e2af; }
+#network { background: #89dceb; }
+#bluetooth { background: #94e2d5; }
+#backlight { background: #a6e3a1; }
+#battery { background: #a6e3a1; }
+#pulseaudio { background: #f5c2e7; }
+#custom-screenshot { background: #89b4fa; }
+
+/* === Battery States === */
+#battery.charging { background: #74c7ec; color: #1e1e2e; }
+#battery.warning:not(.charging) { background: #fab387; color: #1e1e2e; }
+#battery.critical:not(.charging) {
+    background: #f38ba8;
+    color: #1e1e2e;
+    animation: blink 0.6s ease-in-out infinite alternate;
+}
+
+/* === Tray === */
 #tray {
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-}
-#memory {
-    color: #ffffff;
-}
-
-#network {
-    color: #F7BAD7;
-}
-
-#bluetooth {
-    color: #77fce2;
-}
-
-#backlight {
-    color: #C8F7BA;
-}
-
-#custom-screenshot {
-    color: #ffffff;
-}
-
-#battery {
-    color: #C8F7BA;
-}
-#pulseaudio {
-    color: #F7BAD7;
-}
-#custom-screenshot {
-    color: #9df5e3;
-}
-
-tooltip {
-    background: #1a1a1a;
+    border: 1px solid rgba(150, 150, 180, 0.25);
     border-radius: 5px;
+    padding: 2px 5px;
+    background: rgba(40, 40, 55, 0.6);
+    color: #cdd6f4;
+}
+#tray:hover {
+    border-color: #cba6f7;
 }
 
+/* === Tooltip === */
+tooltip {
+    background: #1e1e2e;
+    border: 1px solid #313244;
+    border-radius: 3px;
+}
 tooltip label {
     color: #cdd6f4;
+}
+
+/* === Animations === */
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
 }
 
