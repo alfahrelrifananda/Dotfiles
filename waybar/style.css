@@ -4,13 +4,13 @@
     border-radius: 0;
     font-family: "JetBrains Mono", monospace;
     font-size: 13px;
+    font-weight: 600;
     min-height: 0;
 }
 
 window#waybar {
     background: transparent;
     color: #e0def4;
-    border: 1px solid rgba(150, 150, 180, 0.25);
     border-radius: 6px;
     padding: 3px 6px;
     margin: 3px 3px;
@@ -25,7 +25,7 @@ window#waybar.hidden {
 
 /* === Workspaces === */
 #workspaces {
-    background: rgba(40, 40, 55, 0.7);
+    background: #1e1e2e;
     border-radius: 4px;
     padding: 1px;
 }
@@ -39,8 +39,7 @@ window#waybar.hidden {
 }
 
 #workspaces button:hover {
-    color: #cba6f7;
-    background: rgba(80, 80, 110, 0.5);
+    opacity: 0.7;
 }
 
 #workspaces button.active {
@@ -57,7 +56,7 @@ window#waybar.hidden {
 
 /* === Window Title === */
 #window {
-    background: rgba(40, 40, 55, 0.7);
+    background: #1e1e2e;
     color: #cdd6f4;
     border-radius: 4px;
     padding: 2px 6px;
@@ -75,9 +74,9 @@ window#waybar.hidden {
 }
 
 #clock {
-    background: #f5e0dc;
+    background: #1e1e2e;
     border-radius: 4px;
-    color: #1e1e2e;
+    color: white;
     padding: 2px 6px;
     font-weight: 600;
 }
@@ -91,21 +90,21 @@ window#waybar.hidden {
 #bluetooth,
 #custom-screenshot,
 #tray {
+    background: #1e1e2e;
     border-radius: 4px;
     padding: 2px 6px;
-    margin-left: 3px;
+    margin-left: 0px;
     transition: all 0.2s ease-in-out;
-    color: #1e1e2e; /* dark text on colored background */
 }
 
 /* === Individual Background Colors (reversed) === */
-#memory { background: #f9e2af; }
-#network { background: #89dceb; }
-#bluetooth { background: #94e2d5; }
-#backlight { background: #a6e3a1; }
-#battery { background: #a6e3a1; }
-#pulseaudio { background: #f5c2e7; }
-#custom-screenshot { background: #89b4fa; }
+#memory { color: #f9e2af; }
+#network { color: #89dceb; }
+#bluetooth { color: #94e2d5; }
+#backlight { color: #a6e3a1; }
+#battery { color: #a6e3a1; }
+#pulseaudio { color: #f5c2e7; }
+#custom-screenshot { color: #89b4fa; }
 
 /* === Battery States === */
 #battery.charging { background: #74c7ec; color: #1e1e2e; }
@@ -119,9 +118,9 @@ window#waybar.hidden {
 /* === Tray === */
 #tray {
     border: 1px solid rgba(150, 150, 180, 0.25);
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 2px 5px;
-    background: rgba(40, 40, 55, 0.6);
+    background: #1e1e2e;
     color: #cdd6f4;
 }
 #tray:hover {

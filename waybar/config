@@ -7,15 +7,13 @@
   "margin-top": 3,
   "margin-left": 3,
   "margin-right": 3,
-  "font": "Font Awesome 6 Free Solid 10",
-
   "modules-left": ["custom/weather","hyprland/workspaces","hyprland/window"],
   "modules-center": [""],
-  "modules-right": ["backlight","pulseaudio","bluetooth","battery","network","memory","tray","clock"],
+  "modules-right": ["backlight","pulseaudio","bluetooth","battery","network","memory","clock", "tray"],
 
   "memory": {
     "interval": 30,
-    "format": "󰍛 {percentage}%",
+    "format": "󰍛 {percentage}% ",
     "max-length": 20,
     "tooltip": false,
   },
@@ -85,7 +83,7 @@
 
   "backlight": {
     "device": "intel_backlight",
-    "format": "󰃞 {percent}%",
+    "format": "󰃞  {percent}% ",
     "format-icons": ["󰃞", "󰃞", "󰃞", "󰃞", "󰃞", "󰃞", "󰃞", "󰃞", "󰃞"],
     "on-scroll-up": "brightnessctl set +5%",
     "on-scroll-down": "brightnessctl set 5%-"
@@ -96,16 +94,16 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon} {capacity}%",
+    "format": "{icon}  {capacity}% ",
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{time}",
-    "format-full": " {capacity}%",
+    "format-full": "  {capacity}%",
     "format-icons": ["","","","",""]
   },
 
   "network": {
-    "format-wifi": " {essid}",
+    "format-wifi": "  {essid}",
     "format-ethernet": "󰈀",
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
@@ -117,7 +115,7 @@
   "bluetooth": {
     "format": "󰂯 Disconnected",
     "format-connected": "󰂯",
-    "format-connected-battery": "󰂯 {device_battery_percentage}%",
+    "format-connected-battery": "󰂯 {device_battery_percentage}% ",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
@@ -127,8 +125,8 @@
   },
 
   "pulseaudio": {
-    "format": " {volume}%",
-    "format-bluetooth": " {volume}%",
+    "format": "  {volume}%",
+    "format-bluetooth": "  {volume}%",
     "format-bluetooth-muted": "󰝟",
     "format-muted": "󰝟",
     "format-source": "{volume}%",
@@ -143,8 +141,7 @@
   "custom/screenshot": {
     "format": "PrtSc",
     "tooltip": "Screenshot",
-    "on-click": "grimshot --notify copy area",
-    "on-click-right": "grimshot --notify save area ~/Pictures/$(date +'%Y%m%d_%H%M%S').png"
+    "on-click": "grimblast copy area"
   }
 }
 
