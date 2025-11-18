@@ -1,7 +1,7 @@
 window {
     width: 500px;
     height: 320px;
-    background-color: #1e1e2e;
+    background-color: black;
     border-radius: 0px;
     border: 1px solid rgba(150, 150, 180, 0.25);
     padding: 8px;
@@ -13,7 +13,7 @@ window {
 }
 
 #input {
-    background: rgba(40, 40, 55, 0.7);
+    background: #1e1e2e;
     color: #cdd6f4;
     border: 1px solid rgba(100, 100, 130, 0.3);
     border-radius: 6px;

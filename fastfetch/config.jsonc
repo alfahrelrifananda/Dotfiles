@@ -11,18 +11,12 @@
     "logo": {
 	   "source": "~/.config/fastfetch/images/nyarch.png",
 	   "type": "kitty",
-	   "height": 14,
-	   "padding": {
-		   "top": 1
-	   }
+	   "height": 11
     },
     "display": {
         "separator": " "
     },
     "modules": [
-        "break",
-        "break",
-        "break",
         {
             "type": "title",
             "keyWidth": 10
@@ -77,6 +71,5 @@
             "key": "~ ",
             "keyColor": "34", 
         },
-        "break",
     ]
 }

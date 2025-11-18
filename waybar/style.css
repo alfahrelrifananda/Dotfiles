@@ -59,7 +59,7 @@ window#waybar.hidden {
     background: #1e1e2e;
     color: #cdd6f4;
     border-radius: 4px;
-    padding: 2px 6px;
+    padding: 2px 8px;
     margin: 0;
     font-weight: 500;
 }
@@ -86,9 +86,11 @@ window#waybar.hidden {
 #battery,
 #backlight,
 #network,
+#custom-vpn,
 #pulseaudio,
 #bluetooth,
 #custom-screenshot,
+#custom-power,
 #tray {
     background: #1e1e2e;
     border-radius: 4px;
@@ -100,14 +102,20 @@ window#waybar.hidden {
 /* === Individual Background Colors (reversed) === */
 #memory { color: #f9e2af; }
 #network { color: #89dceb; }
+#custom-vpn {color: #89dceb; }
 #bluetooth { color: #94e2d5; }
 #backlight { color: #a6e3a1; }
 #battery { color: #a6e3a1; }
 #pulseaudio { color: #f5c2e7; }
 #custom-screenshot { color: #89b4fa; }
+#custom-power {color: white; }
+
+#custom-power {
+    border-radius: 50%;
+    padding: 2px 11px 2px 8px;
+}
 
 /* === Battery States === */
-#battery.charging { background: #74c7ec; color: #1e1e2e; }
 #battery.warning:not(.charging) { background: #fab387; color: #1e1e2e; }
 #battery.critical:not(.charging) {
     background: #f38ba8;

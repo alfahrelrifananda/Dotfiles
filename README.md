@@ -4,7 +4,7 @@ My personal configuration files for a minimal and efficient Wayland desktop envi
 
 ## Screenshot
 
-![Desktop Screenshot](./ss.jpg)
+![Desktop Screenshot](./ss.png)
 
 ## Components
 
