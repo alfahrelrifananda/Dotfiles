@@ -34,7 +34,7 @@ Make sure you have the following installed:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/dotfiles.git
+git clone https://github.com/alfahrelrifananda/dotfiles.git
 cd dotfiles
 ```
 
