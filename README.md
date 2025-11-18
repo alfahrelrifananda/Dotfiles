@@ -55,17 +55,4 @@ cp -r .config/wofi ~/.config/
 
 4. Reload Hyprland or log out and log back in
 
-## Configuration
-
-### Hyprland
-Main configuration: `~/.config/hypr/hyprland.conf`
-
-### Waybar
-- Config: `~/.config/waybar/config`
-- Style: `~/.config/waybar/style.css`
-
-### Wofi
-- Config: `~/.config/wofi/config`
-- Style: `~/.config/wofi/style.css`
-
 *Last updated: November 2025*
