@@ -1,37 +1,63 @@
-# Fastfetch 
+<p align="center"> <strong> Fastfetch Configuration </strong></p>
 
-<h3 align="left">
-Welcome to my fastfetch config presets repo :3
-</h3>
+![Fastfetch](https://codeberg.org/aayushchalise/fastfetch/raw/branch/main/preview.webp)
 
-[Fastfetch](https://github.com/fastfetch-cli/fastfetch) is a tool for fetching system information and displaying them in a pretty way. 
-In this repo, I collect my config files that I designed for my [Arch Linux](https://archlinux.org/) [Hyprland](https://github.com/hyprwm/Hyprland) rice. 
-Feel free to copy files and modify them or clone the complete repository.
+<strong> Overview </strong>
 
-<p align="center">
-  <img src="./screenshots/floating-mode.png" style="width: 100%;">
-</p>
+This repository contains my custom Fastfetch configuration. Fastfetch is a tool to display system information in the terminal, and this configuration provides a personalized setup to enhance your terminal experience.
 
-## Usage
+<br>
 
-Clone the repository into ``~/.local/share``
+<p> <strong> Install Dependencies </strong> </p>
 
-```sh
-cd ~/.local/share
-git clone https://github.com/LierB/fastfetch
+Before using this configuration, ensure you have Fastfetch installed.
+
+<details>
+  <summary>Arch Linux</summary>
+
+```bash
+sudo pacman -S fastfetch
 ```
-and execute your preferred files (e.g. ``groups.jsonc`` or ``minimal.jsonc``) with 
+</details>
 
-```sh
-fastfetch --config groups
-fastfetch --config minimal
+<details> <summary>Debian/Ubuntu-based</summary>
+
+```bash
+sudo apt install fastfetch
 ```
-OR
+</details>
 
-Copy your preferred config file (if necessary images/ascii-art files), rename it to ``config.jsonc``, move it to ``~/.config/fastfetch`` and execute it with 
+<br>
 
-```sh
+<p> <strong> Installation </strong> </p>
+
+```shell
+git clone https://github.com/aayushx402/fastfetch.git
+mkdir -p ~/.config/fastfetch
+cp -r fastfetch/* ~/.config/fastfetch/
+```
+
+<p> <strong> Verify Installation </strong> </p>
+
+To ensure everything is set up correctly, run Fastfetch in your terminal
+
+```shell
 fastfetch
-# or with additional options e.g.
-fastfetch --colors-block-range-start 9 --colors-block-width 3
 ```
+<br>
+
+<p> <strong> Customization </strong> </p>
+
+Feel free to modify the configuration files in the `~/.config/fastfetch/` directory to suit your preferences. You can customize various aspects, including colors, icons, and the layout of the information displayed.
+
+<br>
+
+<p> <strong>  Contributing </strong> </p>
+
+If you have suggestions or improvements, feel free to open an issue or submit a pull request on the [CodeBerg repository](https://codeberg.org/aayushchalise/fastfetch).
+
+<br>
+
+<p> <strong> License </strong> </p>
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
