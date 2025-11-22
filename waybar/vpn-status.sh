@@ -11,8 +11,8 @@ if systemctl is-active --quiet "openvpn-client@*"; then
         LOCATION=$(cat "$CURRENT_FILE" | cut -d'-' -f1 | tr '[:lower:]' '[:upper:]')
         echo "{\"text\":\" $LOCATION\",\"tooltip\":\"VPN Connected: $(cat $CURRENT_FILE)\",\"class\":\"connected\"}"
     else
-        echo "{\"text\":\" ON\",\"tooltip\":\"VPN Connected\",\"class\":\"connected\"}"
+        echo "{\"text\":\" \",\"tooltip\":\"VPN Connected\",\"class\":\"connected\"}"
     fi
 else
-    echo "{\"text\":\" OFF\",\"tooltip\":\"VPN Disconnected\",\"class\":\"disconnected\"}"
+    echo "{\"text\":\" \",\"tooltip\":\"VPN Disconnected\",\"class\":\"disconnected\"}"
 fi

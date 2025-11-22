@@ -2,7 +2,7 @@
 
 entries="Logout\nSuspend\nReboot\nShutdown\nLock"
 
-selected=$(echo -e "$entries" | wofi --dmenu --insensitive --prompt "Power Menu" --width 400 --height 250 --cache-file /dev/null)
+selected=$(echo -e "$entries" | wofi --dmenu --insensitive --prompt "Power Menu" --width 300 --height 250 --cache-file /dev/null)
 
 case $selected in
   "Logout")

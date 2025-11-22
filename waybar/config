@@ -3,12 +3,35 @@
   "layer": "top",
   "position": "top",
   "height": 25,
-  "spacing": 3,
+  "spacing": 1,
   "margin-top": 3,
   "margin-left": 3,
   "margin-right": 3,
-  "modules-left": ["custom/weather","hyprland/workspaces","hyprland/window"],
-  "modules-right": ["backlight","pulseaudio","bluetooth","battery","network","custom/vpn","memory","clock", "tray", "custom/power"],
+  "modules-left": ["hyprland/workspaces","hyprland/window"],
+  "modules-center": ["clock","custom/weather"],
+  "modules-right": ["backlight","pulseaudio","bluetooth","battery","network","custom/vpn","memory","custom/cpugraph","custom/internetspeed","tray", "custom/power"],
+
+  "custom/weather": {
+        "exec": "~/.config/waybar/weather.py",
+        "return-type": "json",
+        "interval": 1800,
+	"restart-interval": 60,
+        "format": "{}"
+    },
+
+  "custom/internetspeed": {
+        "format": "{}",
+        "exec": "$HOME/.config/waybar/internet-speed.py",
+        "return-type": "json",
+	"interval":2,
+   },
+
+   "custom/cpugraph": {
+        "exec": "~/.config/waybar/cpu-graph.py",
+        "return-type": "json",
+        "interval": 2,
+        "format": "{}"
+    },
 
   "memory": {
     "interval": 30,
@@ -63,7 +86,7 @@
 
   "backlight": {
     "device": "intel_backlight",
-    "format": "󰃞 {percent}%",
+    "format": "󰃟 {percent}%",
     "format-icons": ["󰃞", "󰃞", "󰃞", "󰃞", "󰃞", "󰃞", "󰃞", "󰃞", "󰃞"],
     "on-scroll-up": "brightnessctl set +5%",
     "on-scroll-down": "brightnessctl set 5%-"
@@ -83,12 +106,13 @@
   },
 
   "network": {
-    "format-wifi": "  {essid}",
+    "format-wifi": " ",
     "format-ethernet": "󰈁 Ethernet",
+    "tooltip-format-wifi": "{essid}",
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
-    "format-disconnected": "Disconnected",
-    "max-length": 10,
+    "format-disconnected": "󰖪 ",
+    "max-length": 7,
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
 
@@ -102,7 +126,7 @@
     },
 
   "bluetooth": {
-    "format": "󰂯 Disconnected",
+    "format": "󰂲",
     "format-connected": "󰂯",
     "format-connected-battery": "󰂯 {device_battery_percentage}%",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",

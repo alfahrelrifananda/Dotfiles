@@ -73,7 +73,7 @@ window#waybar.hidden {
     font-weight: 600;
 }
 
-#clock {
+#clock, #custom-weather {
     background: #1e1e2e;
     border-radius: 4px;
     color: white;
@@ -91,6 +91,8 @@ window#waybar.hidden {
 #bluetooth,
 #custom-screenshot,
 #custom-power,
+#custom-cpugraph,
+#custom-internetspeed,
 #tray {
     background: #1e1e2e;
     border-radius: 4px;
@@ -108,8 +110,9 @@ window#waybar.hidden {
 #battery { color: #a6e3a1; }
 #pulseaudio { color: #f5c2e7; }
 #custom-screenshot { color: #89b4fa; }
-#custom-power {color: white; }
-
+#custom-power { color: white; }
+#custom-cpugraph { color: #a6e3a1; }
+#custom-internetspeed { color: #f5c2e7; }
 #custom-power {
     border-radius: 50%;
     padding: 2px 11px 2px 8px;
