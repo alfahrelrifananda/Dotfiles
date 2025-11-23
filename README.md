@@ -106,16 +106,6 @@ Monitor and control VPN connection status.
 ### Power Menu
 Quick access to power options (shutdown, reboot, logout, etc.).
 
-## Fastfetch Presets
-
-Multiple preset configurations available in `fastfetch/presets/`:
-- `minimal.jsonc` - Minimalist system info
-- `full-info.jsonc` - Comprehensive system details
-- `ascii-art.jsonc` - Custom ASCII art display
-- `arch.jsonc` - Arch Linux themed
-- `hypr.jsonc` - Hyprland themed
-- `nyarch.jsonc` - Nyarch themed
-
 ## Customization
 
 Feel free to modify any configuration files to suit your preferences. Key files:
