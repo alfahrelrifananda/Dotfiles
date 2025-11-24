@@ -1,0 +1,182 @@
+[info   ] [FileManager]: Data files will be fetched from: '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/'
+[info   ] [FileManager]: User directory is '/home/rel/.config/supertuxkart/config-0.10/'.
+[info   ] [FileManager]: Addons files will be stored in '/home/rel/.local/share/supertuxkart/addons/'.
+[info   ] [FileManager]: Screenshots will be stored in '/home/rel/.local/share/supertuxkart/screenshots/'.
+[info   ] [FileManager]: User-defined grand prix will be stored in '/home/rel/.local/share/supertuxkart/grandprix/'.
+[info   ] [FileManager]: Asset 0 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/challenges/'.
+[info   ] [FileManager]: Asset 1 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/gfx/'.
+[info   ] [FileManager]: Asset 2 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/grandprix/'.
+[info   ] [FileManager]: Asset 3 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/gui/icons/'.
+[info   ] [FileManager]: Asset 4 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/gui/screens/'.
+[info   ] [FileManager]: Asset 5 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/gui/dialogs/'.
+[info   ] [FileManager]: Asset 6 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/replay/'.
+[info   ] [FileManager]: Asset 7 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/'.
+[info   ] [FileManager]: Asset 8 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/skins/'.
+[info   ] [FileManager]: Asset 9 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/ttf/'.
+[info   ] [FileManager]: Asset 10 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/po/'.
+[info   ] [FileManager]: Asset 11 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/library/'.
+[info   ] [FileManager]: Asset 12 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/models/'.
+[info   ] [FileManager]: Asset 13 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/music/'.
+[info   ] [FileManager]: Asset 14 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/sfx/'.
+[info   ] [FileManager]: Asset 15 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/textures/'.
+[info   ] [FileManager]: Asset 16 will be loaded from '/home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/tracks/'.
+[verbose  ] translation: Env var LANGUAGE = 'en_US.UTF-8'.
+[verbose  ] translation: Language 'English (United States)'.
+[info   ] [IrrDriver Logger]: ..:: Antarctica Rendering Engine 2.0 ::..
+[info   ] [IrrDriver Logger]: Compiled SDL Version 2.32.0
+[info   ] [IrrDriver Logger]: Current SDL Version 2.32.0
+[info   ] [IrrDriver Logger]: Using renderer: OpenGL 3.3
+[info   ] [IrrDriver Logger]: Mesa Intel(R) HD Graphics 3000 (SNB GT2): Intel
+[info   ] [IrrDriver Logger]: OpenGL driver version is 1.2 or better.
+[info   ] [IrrDriver Logger]: GLSL version: 3.3
+[info   ] IrrDriver: OpenGL version: 3.3
+[info   ] IrrDriver: OpenGL vendor: Intel
+[info   ] IrrDriver: OpenGL renderer: Mesa Intel(R) HD Graphics 3000 (SNB GT2)
+[info   ] IrrDriver: OpenGL version string: 3.3 (Core Profile) Mesa 25.2.7-arch1.1
+[info   ] GLDriver: ARB Buffer Storage Present
+[info   ] GLDriver: ARB Arrays of Arrays Present
+[info   ] GLDriver: ARB Texture Storage Present
+[info   ] GLDriver: EXT Texture Compression S3TC Present
+[info   ] GLDriver: ARB Uniform Buffer Object Present
+[info   ] GLDriver: ARB Explicit Attrib Location Present
+[info   ] GLDriver: EXT Texture Filter Anisotropic Present
+[info   ] GLDriver: Geometry Shaders Present
+[info   ] GLDriver: ARB Texture Buffer Object Present
+[info   ] GLDriver: ARB Texture Swizzle Present
+[info   ] GLDriver: ARB Pixel Buffer Object Present
+[info   ] GLDriver: ARB Sampler Objects Present
+[info   ] GLDriver: ARB Vertex Type 2_10_10_10_rev Present
+[info   ] GLDriver: ARB Instanced Arrays Present
+[info   ] SharedGPUObjects: Hardware Skinning enabled, method: TBO, max bones: 2048
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/screenquad.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/motion_blur.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/lightning.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/primitive2dlist.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/transparent.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/texturedquad.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/uniformcolortexturedquad.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/texturedquad.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/coloredquad.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/coloredquad.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/colortexturedquad.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/colortexturedquad.frag
+[info   ] irr_driver: GLSL supported.
+[info   ] GUI: Loading skin data from file: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/skins/classic/stkskin.xml
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_pass.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_solid.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_shadow.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/white.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_skinning.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_skinning_shadow.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_normal_map.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_alpha_test.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_shadow_alpha_test.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_decal.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_grass_pass.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_grass.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_grass_shadow.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_unlit.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_transparent.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_ghost.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_dynamic_night_bloom.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_tilling_mitigation.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_vertical_mapping.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_road_blending.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_displace_ssr.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_displace.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/colorize.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_normal_visualizer.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_normal_visualizer.geom
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sp_normal_visualizer.frag
+[info   ] HTTPRequest: Downloading https://online.supertuxkart.net/dl/xml/online_news.xml
+[error  ] HTTPRequest: Request failed with error code 6: Could not resolve hostname
+[info   ] HTTPRequest: Downloading https://online.supertuxkart.net/dl/xml/online_news.xml
+[error  ] HTTPRequest: Request failed with error code 6: Could not resolve hostname
+[error  ] news: Error downloading news: 'Could not resolve hostname'.
+[info   ] addons: Using cached addons.xml.
+[error  ] SFXBuffer: Positional audio is not supported with stereo files, but /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/sfx/WilhelmScream.ogg is stereo
+[error  ] SFXBuffer: Positional audio is not supported with stereo files, but /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/sfx/car_revup.ogg is stereo
+[info   ] GrandPrixManager: Loading Grand Prix files from /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/grandprix/
+[info   ] GrandPrixManager: Loading Grand Prix files from /home/rel/.local/share/supertuxkart/grandprix/
+[warn   ] Material: Missing container id for gnu_accessories.png, no texture compression for it will be done.
+[warn   ] SPMeshBuffer: kartDirt shader is missing, fallback to solid
+[warn   ] SPMeshBuffer: kartDirt shader is missing, fallback to solid
+[warn   ] SPMeshBuffer: kartDirt shader is missing, fallback to solid
+[warn   ] SPMeshBuffer: kartDirt shader is missing, fallback to solid
+[warn   ] SPMeshBuffer: kartDirt shader is missing, fallback to solid
+[warn   ] Material: Missing container id for Pepper_lamp_diff.png, no texture compression for it will be done.
+[warn   ] LayoutManager: Statically sized widgets took all the place!!
+[warn   ] LayoutManager: Statically sized widgets took all the place!!
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/simple_particle.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/simple_particle.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/alphatest_particle.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/alphatest_particle.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/degraded_ibl.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sunlight.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/pointlight.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/pointlight.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/combine_diffuse_color.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/tonemap.frag
+[warn   ] LayoutManager: Statically sized widgets took all the place!!
+[warn   ] LayoutManager: Statically sized widgets took all the place!!
+[warn   ] LayoutManager: Statically sized widgets took all the place!!
+[warn   ] LayoutManager: Statically sized widgets took all the place!!
+[warn   ] LayoutManager: Statically sized widgets took all the place!!
+[warn   ] LayoutManager: Statically sized widgets took all the place!!
+[warn   ] LayoutManager: Statically sized widgets took all the place!!
+[warn   ] LayoutManager: Statically sized widgets took all the place!!
+[warn   ] LayoutManager: Statically sized widgets took all the place!!
+[warn   ] LayoutManager: Statically sized widgets took all the place!!
+[warn   ] AbstractTopLevelContainer::addWidgetsRecursively: Widget target-type-spinner of type 1 has no dimensions
+[warn   ] AbstractTopLevelContainer::addWidgetsRecursively: Widget target-type-text of type 5 has no dimensions
+[warn   ] AbstractTopLevelContainer::addWidgetsRecursively: Widget ai-blue-spinner of type 1 has no dimensions
+[warn   ] AbstractTopLevelContainer::addWidgetsRecursively: Widget ai-blue-text of type 5 has no dimensions
+[verbose  ] RaceManager: Nb of karts=4, ghost karts:0 ai:3 players:1
+
+[info   ] [FileManager]: Creating directory(ies) '/home/rel/.cache/supertuxkart/cached-textures/hd/tracks/cornfield_crossing'
+[info   ] FileManager: Creating directory '/home/rel/.cache/supertuxkart/cached-textures/hd/tracks/cornfield_crossing/'.
+[info   ] [FileManager]: Creating directory(ies) '/home/rel/.cache/supertuxkart/cached-textures/hd/skybox'
+[info   ] FileManager: Creating directory '/home/rel/.cache/supertuxkart/cached-textures/hd/skybox/'.
+[info   ] [FileManager]: Creating directory(ies) '/home/rel/.cache/supertuxkart/cached-textures/hd/library/stklib_fitchBarrel_a'
+[info   ] FileManager: Creating directory '/home/rel/.cache/supertuxkart/cached-textures/hd/library/'.
+[info   ] FileManager: Creating directory '/home/rel/.cache/supertuxkart/cached-textures/hd/library/stklib_fitchBarrel_a/'.
+[info   ] [FileManager]: Creating directory(ies) '/home/rel/.cache/supertuxkart/cached-textures/hd/library/stklib_hayBall_a'
+[info   ] FileManager: Creating directory '/home/rel/.cache/supertuxkart/cached-textures/hd/library/stklib_hayBall_a/'.
+[info   ] [FileManager]: Creating directory(ies) '/home/rel/.cache/supertuxkart/cached-textures/hd/library/stklib_pumpkin_a'
+[info   ] FileManager: Creating directory '/home/rel/.cache/supertuxkart/cached-textures/hd/library/stklib_pumpkin_a/'.
+[info   ] [FileManager]: Creating directory(ies) '/home/rel/.cache/supertuxkart/cached-textures/hd/library/stklib_sagebrush_a'
+[info   ] FileManager: Creating directory '/home/rel/.cache/supertuxkart/cached-textures/hd/library/stklib_sagebrush_a/'.
+[info   ] Track: Overall scene complexity estimated at 644, Auto-LoD multiplier is 1.389401
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/importance_sampling_specular.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sky.vert
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/sky.frag
+[info   ] ShaderFilesManager: Compiling shader: /home/rel/Games/SuperTuxKart-1.5-linux-x86_64/data/shaders/passthrough.frag
+[warn   ] SFX: Position called on non-positional SFX
+[warn   ] SFX: Position called on non-positional SFX
+[warn   ] SFX: Position called on non-positional SFX
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[verbose  ] Thread: Start waiting 2862208.195000
+[verbose  ] Thread: Waited 0.011000 seconds for thread to become deleteable.
+[verbose  ] Thread: Stop waiting 2862208.206000
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.
+[info   ] Singleton: Destroyed singleton.

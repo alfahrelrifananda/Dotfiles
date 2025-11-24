@@ -1,0 +1,30 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.1366.768" x="678" y="307" />
+  </component>
+  <component name="WindowManager">
+    <frame x="36" y="64" width="641" height="668" />
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="466" y="154" width="424" height="458" key="FileChooserDialogImpl.ideScale=110" timestamp="1763631833219">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="466" y="154" width="424" height="458" key="FileChooserDialogImpl.ideScale=110/0.28.1366.740" timestamp="1763631833219" />
+    <state x="1014" y="398" width="651" height="688" key="WELCOME_SCREEN" timestamp="1763364548862">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="683" y="398" width="1354" height="728" key="WELCOME_SCREEN.ideScale=110" timestamp="1763709732132">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="683" y="398" width="1354" height="728" key="WELCOME_SCREEN.ideScale=110/0.28.1366.740" timestamp="1763709732132" />
+    <state x="683" y="398" width="1294" height="668" key="WELCOME_SCREEN.ideScale=115" timestamp="1763896509030">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="683" y="398" width="1294" height="668" key="WELCOME_SCREEN.ideScale=115/0.28.1366.740" timestamp="1763896509030" />
+    <state x="1014" y="398" width="651" height="688" key="WELCOME_SCREEN.ideScale=125" timestamp="1763364562158">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="1014" y="398" width="651" height="688" key="WELCOME_SCREEN.ideScale=125/0.28.1366.740" timestamp="1763364562158" />
+    <state x="1014" y="398" width="651" height="688" key="WELCOME_SCREEN/0.28.1366.740" timestamp="1763364548862" />
+  </component>
+</application>

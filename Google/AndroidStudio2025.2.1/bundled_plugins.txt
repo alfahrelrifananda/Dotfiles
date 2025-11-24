@@ -1,0 +1,61 @@
+Coverage|Code Coverage
+Git4Idea|Version Controls
+HtmlTools|HTML and XML
+JUnit|Test Tools
+Subversion|Version Controls
+TestNG-J|Test Tools
+androidx.compose.plugins.idea|Android
+com.android.tools.apk|null
+com.android.tools.design|Android
+com.android.tools.gradle.dcl|null
+com.android.tools.idea.smali|Android
+com.android.tools.ndk|null
+com.google.gct.directaccess|null
+com.google.gct.test.recorder|null
+com.google.gct.testing|null
+com.google.services.firebase|null
+com.google.services.git4insights|null
+com.google.targetsdkversionassistant|null
+com.google.tools.ij.aiplugin|null
+com.google.urlassistant|null
+com.intellij.cidr.base|null
+com.intellij.cidr.debugger|null
+com.intellij.cidr.lang.clangd|null
+com.intellij.cidr.lang|Languages
+com.intellij.compose|Kotlin Frameworks
+com.intellij.configurationScript|IDE Settings
+com.intellij.copyright|IDE Settings
+com.intellij.dev|Plugin Development
+com.intellij.gradle|Build Tools
+com.intellij.java-i18n|JVM Tools
+com.intellij.java.ide|IDE Settings
+com.intellij.java|Languages
+com.intellij.modules.json|Languages
+com.intellij.platform.images|null
+com.intellij.plugins.eclipsekeymap|Keymap
+com.intellij.plugins.netbeanskeymap|Keymap
+com.intellij.plugins.visualstudiokeymap|Keymap
+com.intellij.properties|Languages
+com.intellij.tasks|Other Tools
+com.intellij|null
+com.jetbrains.performancePlugin|Platform Development
+com.jetbrains.sh|Languages
+hg4idea|Version Controls
+intellij.git.commit.modal|Version Controls
+intellij.webp|null
+org.editorconfig.editorconfigjetbrains|IDE Settings
+org.intellij.groovy|Languages
+org.intellij.intelliLang|IDE Settings
+org.intellij.plugins.markdown|Languages
+org.jetbrains.android|Android
+org.jetbrains.debugger.streams|JVM Tools
+org.jetbrains.idea.reposearch|Build Tools
+org.jetbrains.java.decompiler|JVM Tools
+org.jetbrains.kotlin|Languages
+org.jetbrains.plugins.github|Version Controls
+org.jetbrains.plugins.gitlab|Version Controls
+org.jetbrains.plugins.gradle|Build Tools
+org.jetbrains.plugins.terminal|Other Tools
+org.jetbrains.plugins.textmate|Languages
+org.jetbrains.plugins.yaml|Languages
+org.toml.lang|Languages

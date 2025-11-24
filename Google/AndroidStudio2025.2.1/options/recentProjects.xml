@@ -1,0 +1,42 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/AndroidStudioProjects/Rel-Music">
+          <value>
+            <RecentProjectMetaInfo frameTitle="RelMusic – AlbumDetailActivity.java [RelMusic.app.main]" projectWorkspaceId="35jmQbsGjq2LbBrupO9J70mFfDG">
+              <option name="activationTimestamp" value="1763896161915" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="AI-252.25557.131.2521.14344949" />
+              <option name="buildTimestamp" value="1761700680000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="1" />
+              </option>
+              <frame x="36" y="64" width="1294" height="668" />
+              <option name="productionCode" value="AI" />
+              <option name="projectOpenTimestamp" value="1763896176011" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AndroidStudioProjects/MyApplication">
+          <value>
+            <RecentProjectMetaInfo frameTitle="My Application – activity_main.xml [My_Application.app.main]" opened="true" projectWorkspaceId="35ioTYcSs5XZyLbnlw23jwHnPOr">
+              <option name="activationTimestamp" value="1763896614742" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="AI-252.25557.131.2521.14344949" />
+              <option name="buildTimestamp" value="1761700680000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="36" y="64" width="641" height="668" />
+              <option name="productionCode" value="AI" />
+              <option name="projectOpenTimestamp" value="1763896512287" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/AndroidStudioProjects/MyApplication" />
+    <option name="lastProjectLocation" value="$USER_HOME$/AndroidStudioProjects" />
+  </component>
+</application>
