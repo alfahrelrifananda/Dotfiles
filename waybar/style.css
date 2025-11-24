@@ -86,7 +86,7 @@ window#waybar.hidden {
 #battery,
 #backlight,
 #network,
-#custom-vpn,
+#custom-torstatus,
 #pulseaudio,
 #bluetooth,
 #custom-screenshot,
@@ -104,7 +104,7 @@ window#waybar.hidden {
 /* === Individual Background Colors (reversed) === */
 #memory { color: #f9e2af; }
 #network { color: #89dceb; }
-#custom-vpn {color: #89dceb; }
+#custom-torstatus {color: #89dceb; }
 #bluetooth { color: #94e2d5; }
 #backlight { color: #a6e3a1; }
 #battery { color: #a6e3a1; }

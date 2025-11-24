@@ -1,20 +1,28 @@
 #!/bin/bash
+# power-menu.sh with custom styling
 
-entries="Logout\nSuspend\nReboot\nShutdown\nLock"
+entries=" Shutdown\n󰜉 Reboot\n󰒲 Suspend\n Lock\n Logout"
 
-selected=$(echo -e "$entries" | wofi --dmenu --insensitive --prompt "Power Menu" --width 300 --height 250 --cache-file /dev/null)
+selected=$(echo -e "$entries" | wofi \
+    --dmenu \
+    --insensitive \
+    --prompt "Power Menu" \
+    --style ~/.config/wofi/power-menu.css \
+    --width 300 \
+    --height 250 \
+    --cache-file /dev/null)
 
 case $selected in
-  "Logout")
-    hyprctl dispatch exit;;
-  "Suspend")
-    systemctl suspend;;
-  "Reboot")
-    systemctl reboot;;
-  "Shutdown")
+  " Shutdown")
     systemctl poweroff;;
-  "Lock")
+  "󰜉 Reboot")
+    systemctl reboot;;
+  "󰒲 Suspend")
+    systemctl suspend;;
+  " Lock")
     hyprlock;;
+  " Logout")
+    hyprctl dispatch exit;;
   *)
     exit 0;;
 esac

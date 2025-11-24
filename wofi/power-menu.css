@@ -1,0 +1,81 @@
+/* === Power Menu Style - Distinct from Main Wofi === */
+
+window {
+    margin: 0px;
+    border: 2px solid #f38ba8;
+    background-color: #1e1e2e;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(243, 139, 168, 0.3);
+}
+
+#input {
+    padding: 8px 12px;
+    margin: 8px;
+    border: none;
+    border-radius: 6px;
+    color: #f38ba8;
+    font-weight: bold;
+    background-color: rgba(243, 139, 168, 0.15);
+    outline: none;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+}
+
+#input:focus {
+    border: 2px solid #f38ba8;
+    background-color: rgba(243, 139, 168, 0.2);
+}
+
+#inner-box {
+    margin: 8px;
+    padding: 6px;
+    border: none;
+    color: #cdd6f4;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 0px;
+    padding: 0px;
+    background-color: #1e1e2e;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    color: #cdd6f4;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#text:selected {
+    color: #1e1e2e;
+    font-weight: bold;
+}
+
+#entry {
+    margin: 4px 8px;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: rgba(30, 30, 46, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+
+#entry:hover {
+    background-color: rgba(243, 139, 168, 0.3);
+    border-color: #f38ba8;
+    transform: translateX(4px);
+}
+
+#entry:selected {
+    background-color: #f38ba8;
+    border-color: #f38ba8;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(243, 139, 168, 0.5);
+}

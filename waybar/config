@@ -8,8 +8,8 @@
   "margin-left": 3,
   "margin-right": 3,
   "modules-left": ["hyprland/workspaces","hyprland/window"],
-  "modules-center": ["clock","custom/weather"],
-  "modules-right": ["backlight","pulseaudio","bluetooth","battery","network","custom/vpn","memory","custom/cpugraph","custom/internetspeed","tray", "custom/power"],
+  "modules-center": ["custom/weather","clock"],
+  "modules-right": ["backlight","pulseaudio","bluetooth","battery","network","custom/torstatus","memory","custom/cpugraph","custom/internetspeed","tray", "custom/power"],
 
   "custom/weather": {
         "exec": "~/.config/waybar/weather.py",
@@ -17,6 +17,14 @@
         "interval": 1800,
 	"restart-interval": 60,
         "format": "{}"
+    },
+
+    "custom/torstatus": {
+        "exec": "~/.config/waybar/tor-status.py",
+        "return-type": "json",
+        "interval": 3,
+        "format": "{}",
+        "on-click": "~/.config/waybar/tor-toggle.sh"
     },
 
   "custom/internetspeed": {
@@ -97,12 +105,12 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon}  {capacity}%",
+    "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{time}",
-    "format-full": " {capacity}%",
-    "format-icons": ["","","","",""]
+    "format-full": "󰁹{capacity}%",
+    "format-icons": ["󰁺","󰁼","󰁾","󰂀","󰁹"]
   },
 
   "network": {
