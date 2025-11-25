@@ -13,6 +13,15 @@ My personal configuration files for a minimal and efficient Wayland desktop envi
 - **Application Launcher**: [Wofi](https://hg.sr.ht/~scoopta/wofi) - A launcher/menu program for wlroots compositors
 - **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/) - A fast, feature-rich GPU-based terminal emulator
 - **System Info**: [Fastfetch](https://github.com/fastfetch-cli/fastfetch) - A neofetch-like tool with multiple presets
+- **Editor**: [Neovim](https://neovim.io/) - Hyperextensible Vim-based text editor
+- **System Monitor**: [btop](https://github.com/aristocratos/btop) - Resource monitor with a clean interface
+- **Audio Visualizer**: [Cava](https://github.com/karlstav/cava) - Console-based audio visualizer
+- **Music Player**: [musikcube](https://github.com/clangen/musikcube) - Terminal-based music player
+- **Media Player**: [mpv](https://mpv.io/) - Lightweight media player / [Celluloid](https://celluloid-player.github.io/) - GTK frontend for mpv
+- **File Manager**: [Ranger](https://github.com/ranger/ranger) - Console file manager / [Thunar](https://docs.xfce.org/xfce/thunar/start) - Modern file manager
+- **Wallpaper Manager**: [waypaper](https://github.com/anufrievroman/waypaper) - GUI wallpaper setter for Wayland
+- **IRC Client**: [WeeChat](https://weechat.org/) - Extensible chat client
+- **Bluetooth Manager**: [bluetuith](https://github.com/darkhz/bluetuith) - TUI-based Bluetooth manager
 
 ## Features
 
@@ -40,6 +49,15 @@ Make sure you have the following installed:
 - Wofi
 - Kitty
 - Fastfetch
+- Neovim
+- btop
+- Cava
+- musikcube
+- mpv / Celluloid
+- Ranger / Thunar
+- waypaper
+- WeeChat
+- bluetuith
 - Python 3 (for custom Waybar modules)
 - hypridle and hyprlock (optional, for idle management)
 
@@ -59,6 +77,13 @@ cp -r ~/.config/waybar ~/.config-backup/ 2>/dev/null
 cp -r ~/.config/wofi ~/.config-backup/ 2>/dev/null
 cp -r ~/.config/kitty ~/.config-backup/ 2>/dev/null
 cp -r ~/.config/fastfetch ~/.config-backup/ 2>/dev/null
+cp -r ~/.config/nvim ~/.config-backup/ 2>/dev/null
+cp -r ~/.config/btop ~/.config-backup/ 2>/dev/null
+cp -r ~/.config/cava ~/.config-backup/ 2>/dev/null
+cp -r ~/.config/musikcube ~/.config-backup/ 2>/dev/null
+cp -r ~/.config/mpv ~/.config-backup/ 2>/dev/null
+cp -r ~/.config/ranger ~/.config-backup/ 2>/dev/null
+cp -r ~/.config/weechat ~/.config-backup/ 2>/dev/null
 ```
 
 3. Copy the configuration files:
@@ -68,6 +93,14 @@ cp -r waybar ~/.config/
 cp -r wofi ~/.config/
 cp -r kitty ~/.config/
 cp -r fastfetch ~/.config/
+cp -r nvim ~/.config/
+cp -r btop ~/.config/
+cp -r cava ~/.config/
+cp -r musikcube ~/.config/
+cp -r mpv ~/.config/
+cp -r ranger ~/.config/
+cp -r waypaper ~/.config/
+cp -r weechat ~/.config/
 ```
 
 4. Make Waybar scripts executable:
@@ -114,6 +147,10 @@ Feel free to modify any configuration files to suit your preferences. Key files:
 - `waybar/style.css` - Waybar appearance
 - `wofi/style.css` - Application launcher styling
 - `kitty/kitty.conf` - Terminal emulator settings
+- `nvim/` - Neovim configuration
+- `btop/btop.conf` - System monitor settings
+- `cava/config` - Audio visualizer configuration
+- `ranger/rc.conf` - File manager settings
 
 ## Credits
 
