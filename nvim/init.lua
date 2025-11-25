@@ -6,6 +6,8 @@ vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.whichwrap:append("<,>,[,]")
 vim.keymap.set("v", "<C-c>", '"+y<Esc>', { desc = "Copy" })
+vim.keymap.set("n", "<C-c>", '"+yy', { desc = "Copy line" })
+vim.keymap.set("i", "<C-c>", '<Esc>"+yyi', { desc = "Copy line" })
 vim.keymap.set("n", "<C-x>", '"+dd', { desc = "Cut line" })
 vim.keymap.set("i", "<C-x>", '<Esc>"+ddi', { desc = "Cut line" })
 vim.keymap.set("v", "<C-x>", '"+d', { desc = "Cut selection" })
@@ -135,3 +137,4 @@ require("lazy").setup({
 		end,
 	},
 })
+
