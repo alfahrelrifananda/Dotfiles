@@ -21,7 +21,6 @@ vim.opt.background = "dark"
 vim.api.nvim_set_hl(0, "Normal", { bg = nil })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = nil })
 
--- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -35,41 +34,33 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Setup Supermaven
 require("lazy").setup({
-	-- Color scheme
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
 			require("tokyonight").setup({
-				style = "night", -- Options: "storm", "moon", "night", "day"
+				style = "night",
 				transparent = true,
 			})
 			vim.cmd([[colorscheme tokyonight]])
 		end,
 	},
 
-	-- Telescope fuzzy finder
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.8",
 		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function()
 			local builtin = require("telescope.builtin")
-			-- Find files
 			vim.keymap.set("n", "<C-p>", builtin.find_files, { desc = "Find files" })
-			-- Search in files (grep)
 			vim.keymap.set("n", "<C-f>", builtin.live_grep, { desc = "Search in files" })
-			-- Recent files
 			vim.keymap.set("n", "<C-r>", builtin.oldfiles, { desc = "Recent files" })
-			-- Search current buffer
 			vim.keymap.set("n", "<C-/>", builtin.current_buffer_fuzzy_find, { desc = "Search in current file" })
 		end,
 	},
 
-	-- Supermaven AI completion
 	{
 		"supermaven-inc/supermaven-nvim",
 		config = function()
@@ -85,7 +76,6 @@ require("lazy").setup({
 		end,
 	},
 
-	-- Comment.nvim for easy commenting
 	{
 		"numToStr/Comment.nvim",
 		config = function()
@@ -101,13 +91,11 @@ require("lazy").setup({
 		end,
 	},
 
-	-- Conform.nvim for formatting with Prettier
 	{
 		"stevearc/conform.nvim",
 		config = function()
 			require("conform").setup({
 				formatters_by_ft = {
-					-- Web
 					javascript = { "prettier" },
 					typescript = { "prettier" },
 					javascriptreact = { "prettier" },
@@ -121,20 +109,17 @@ require("lazy").setup({
 					yaml = { "prettier" },
 					markdown = { "prettier" },
 					graphql = { "prettier" },
-					-- Systems
 					c = { "clang_format" },
 					cpp = { "clang_format" },
 					java = { "clang_format" },
 					rust = { "rustfmt" },
 					go = { "gofmt" },
-					-- Scripting
 					python = { "black" },
 					lua = { "stylua" },
 					ruby = { "rubocop" },
 					php = { "php_cs_fixer" },
 					sh = { "shfmt" },
 					bash = { "shfmt" },
-					-- Other
 					sql = { "sql_formatter" },
 					xml = { "xmlformat" },
 				},
