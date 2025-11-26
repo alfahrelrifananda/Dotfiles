@@ -4,10 +4,37 @@ import subprocess
 import urllib.request
 import urllib.error
 import os
+import sys
 from pathlib import Path
 
 # State file to track previous status
 STATE_FILE = Path.home() / '.cache' / 'tor_status_state.json'
+
+def toggle_tor_service():
+    """Toggle Tor service on/off"""
+    try:
+        # Check current status
+        result = subprocess.run(
+            ['systemctl', 'is-active', 'tor'],
+            capture_output=True,
+            text=True,
+            timeout=2
+        )
+        is_active = result.stdout.strip() == 'active'
+        
+        if is_active:
+            # Stop Tor
+            subprocess.run(['sudo', 'systemctl', 'stop', 'tor'], timeout=5, check=True)
+        else:
+            # Start Tor
+            subprocess.run(['sudo', 'systemctl', 'start', 'tor'], timeout=5, check=True)
+    except Exception as e:
+        pass
+
+# Handle click events
+if len(sys.argv) > 1 and sys.argv[1] == 'toggle':
+    toggle_tor_service()
+    sys.exit(0)
 
 def load_previous_state():
     """Load previous state from file"""
@@ -25,17 +52,6 @@ def save_state(status, bootstrap):
         STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
         with open(STATE_FILE, 'w') as f:
             json.dump({'status': status, 'bootstrap': bootstrap}, f)
-    except:
-        pass
-
-def send_notification(title, message, urgency='normal', icon=None):
-    """Send desktop notification"""
-    try:
-        cmd = ['notify-send', '-u', urgency, '-a', 'Tor Monitor']
-        if icon:
-            cmd.extend(['-i', icon])
-        cmd.extend([title, message])
-        subprocess.run(cmd, timeout=2)
     except:
         pass
 
@@ -97,6 +113,7 @@ tor_service = check_tor_service()
 bootstrap_percent = check_bootstrap() if tor_service else 0
 tor_connected = check_tor_connection() if bootstrap_percent == 100 else False
 
+
 # Determine status
 if tor_connected:
     icon = ""
@@ -105,69 +122,23 @@ if tor_connected:
     tooltip = "Tor network is active\nYour traffic is anonymized"
     current_status = "connected"
 elif tor_service and bootstrap_percent > 0:
-    icon = "󱘖"
+    icon = "󰴻"
     text = ""
     status_class = "tor-connecting"
     tooltip = f"Tor is connecting...\nBootstrap: {bootstrap_percent}%"
     current_status = "connecting"
 elif tor_service:
-    icon = "󱗘"
+    icon = "󰇘"
     text = ""
     status_class = "tor-starting"
     tooltip = "Tor service is starting..."
     current_status = "starting"
 else:
-    icon = ""
+    icon = ""
     text = ""
     status_class = "tor-off"
     tooltip = "Tor is not running\nClick to start"
     current_status = "off"
-
-# Send notifications on status changes
-if prev_state['status'] != current_status:
-    if current_status == "connected":
-        send_notification(
-            "Tor Connected",
-            "You are now connected to the Tor network.\nYour traffic is anonymized.",
-            urgency='normal',
-            icon='security-high'
-        )
-    elif current_status == "connecting":
-        if prev_state['status'] == "connected":
-            send_notification(
-                "Tor Connection Lost",
-                f"Connection dropped. Reconnecting...\nBootstrap: {bootstrap_percent}%",
-                urgency='critical',
-                icon='network-wireless-offline'
-            )
-        elif prev_state['status'] == "off":
-            send_notification(
-                "Tor Connecting",
-                f"Tor is establishing connection...\nBootstrap: {bootstrap_percent}%",
-                urgency='low',
-                icon='network-wireless-acquiring'
-            )
-    elif current_status == "off" and prev_state['status'] in ["connected", "connecting", "starting"]:
-        send_notification(
-            "Tor Disconnected",
-            "Tor service has stopped.\nYour traffic is no longer anonymized.",
-            urgency='critical',
-            icon='security-low'
-        )
-
-# Notify on bootstrap progress milestones (25%, 50%, 75%)
-if current_status == "connecting":
-    prev_bootstrap = prev_state.get('bootstrap', 0)
-    milestones = [25, 50, 75]
-    for milestone in milestones:
-        if prev_bootstrap < milestone <= bootstrap_percent:
-            send_notification(
-                "Tor Connection Progress",
-                f"Bootstrap: {bootstrap_percent}%\nAlmost there...",
-                urgency='low',
-                icon='network-wireless-acquiring'
-            )
-            break
 
 # Save current state
 save_state(current_status, bootstrap_percent)

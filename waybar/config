@@ -9,7 +9,7 @@
   "margin-right": 3,
   "modules-left": ["hyprland/workspaces","hyprland/window"],
   "modules-center": ["custom/weather","clock"],
-  "modules-right": ["backlight","pulseaudio","bluetooth","battery","network","custom/torstatus","memory","custom/cpugraph","custom/internetspeed","tray", "custom/power"],
+  "modules-right": ["backlight","pulseaudio","bluetooth","battery","network","custom/torstatus","custom/vpn","memory","custom/cpugraph","tray","custom/internetspeed","custom/power"],
 
   "custom/weather": {
         "exec": "~/.config/waybar/weather.py",
@@ -21,10 +21,11 @@
 
     "custom/torstatus": {
         "exec": "~/.config/waybar/tor-status.py",
-        "return-type": "json",
-        "interval": 3,
-        "format": "{}",
-        "on-click": "~/.config/waybar/tor-toggle.sh"
+	"return-type": "json",
+    	"interval": 5,
+    	"on-click": "~/.config/waybar/tor-status.py toggle",
+    	"format": "{}",
+    	"tooltip": true
     },
 
   "custom/internetspeed": {

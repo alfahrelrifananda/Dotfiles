@@ -91,6 +91,7 @@ window#waybar.hidden {
 #bluetooth,
 #custom-screenshot,
 #custom-power,
+#custom-vpn,
 #custom-cpugraph,
 #custom-internetspeed,
 #tray {
@@ -111,6 +112,7 @@ window#waybar.hidden {
 #pulseaudio { color: #f5c2e7; }
 #custom-screenshot { color: #89b4fa; }
 #custom-power { color: white; }
+#custom-vpn { color: white; }
 #custom-cpugraph { color: #a6e3a1; }
 #custom-internetspeed { color: #f5c2e7; }
 #custom-power {
