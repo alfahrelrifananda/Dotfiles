@@ -19,7 +19,7 @@ def get_bytes(interface='eth0'):
 def format_speed(bytes_per_sec):
     """Format bytes per second to MB/s"""
     mb_per_sec = bytes_per_sec / (1024 * 1024)
-    return f"{mb_per_sec:.2f} MB/s"
+    return f"{mb_per_sec:.2f} "
 
 def find_active_interface():
     """Find the active network interface"""

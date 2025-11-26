@@ -1,13 +1,14 @@
 {
-  "LastBrowseCategoryId": 3750119582.0,
-  "LastBrowseCategoryType": "album",
+  "LastBrowseCategoryId": 6.0,
+  "LastBrowseCategoryType": "artist",
+  "LastBrowseDirectoryRoot": "/home/rel/personal/music/",
   "LastBrowseFilter": "",
   "LastBrowseFilterVisible": false,
   "LastCategoryFilter": "",
   "LastCategoryFilterMatchType": 1,
-  "LastLibraryView": "Browse",
-  "LastPlayQueueIndex": 7,
-  "LastPlayQueueTime": 218.0,
+  "LastLibraryView": "Directory",
+  "LastPlayQueueIndex": 0,
+  "LastPlayQueueTime": 222.0,
   "LastTrackFilter": "",
   "LastTrackFilterMatchType": 1
 }

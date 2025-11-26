@@ -1,107 +1,106 @@
-15:13:24 [info] [LOG SESSION] ---------- START ----------
-15:13:24 [info] [PluginFactory] loading plugins
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpulseout.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsupereqdsp.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libstockencoders.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libtaglibreader.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libgmedecoder.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libffmpegdecoder.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libserver.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libopenmptdecoder.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libnullout.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libmpris.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsndioout.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpipewireout.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libalsaout.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libportaudioout.so
-15:13:24 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libhttpdatastream.so
-15:13:24 [info] [PortAudioOut] Pa_Initialize() return code: 0
-15:13:24 [info] [PipeWireOut] shutdown started
-15:13:24 [info] [PipeWireOut] shutdown complete
-15:13:24 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
-15:13:24 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
-15:13:24 [info] [PortAudioOut] Pa_Terminate() return code: 0
-15:13:24 [info] [Indexer] indexer source -1303229654 running...
-15:13:24 [info] [Indexer] indexer source -1303229654 finished
-15:13:24 [info] [Indexer] indexer source 155697690 running...
-15:13:24 [info] [Indexer] indexer source 155697690 finished
-15:13:24 [info] [Indexer] scanning /home/rel/personal/music/
-15:13:24 [info] [Indexer] scan completed successfully
-15:13:24 [info] [Indexer] cleanup 1/2
-15:13:24 [info] [Indexer] cleanup 2/2
-15:13:24 [info] [Indexer] optimizing
-15:13:24 [info] [LocalLibrary] query 'SearchTrackListQuery' enqueued
-15:13:24 [info] [Indexer] done!
-15:13:24 [info] [LocalLibrary] query 'SearchTrackListQuery' running
-15:13:24 [info] [LocalLibrary] query 'SearchTrackListQuery' finished with status=4
-15:13:24 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
-15:13:24 [info] [LocalLibrary] query 'CategoryListQuery' running
-15:13:24 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
-15:13:24 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
-15:13:24 [info] [LocalLibrary] query 'CategoryListQuery' running
-15:13:24 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
-15:13:24 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
-15:13:24 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
-15:13:24 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
-15:13:24 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
-15:13:24 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
-15:13:24 [info] [LocalLibrary] query 'CategoryListQuery' running
-15:13:24 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=5
-15:13:24 [info] [LocalLibrary] query 'CategoryListQuery' running
-15:13:24 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
-15:13:24 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-15:13:24 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-15:13:24 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-15:13:24 [info] [GaplessTransport] starting track at /home/rel/personal/music/Efek Rumah Kaca - Rimpang - 01-08 Rimpang.flac
-15:13:24 [info] [Player] new instance created
-15:13:24 [info] [GaplessTransport] stop
-15:13:24 [info] [Stream] opening /home/rel/personal/music/Efek Rumah Kaca - Rimpang - 01-08 Rimpang.flac
-15:13:24 [info] [LocalFileStream] opening file: /home/rel/personal/music/Efek Rumah Kaca - Rimpang - 01-08 Rimpang.flac
-15:13:24 [info] [ffmpegdecoder] parsing data stream...
-15:13:24 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-15:13:24 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-15:13:24 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-15:13:24 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-15:13:24 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-15:13:24 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-15:13:24 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-15:13:24 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-15:13:24 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-15:13:24 [info] [ffmpegdecoder] found audio stream!
-15:13:24 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-15:13:24 [info] [Streams] found a decoder for /home/rel/personal/music/Efek Rumah Kaca - Rimpang - 01-08 Rimpang.flac
-15:13:24 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-15:13:26 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-15:13:26 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-15:13:26 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-15:13:26 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-15:13:26 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-15:13:26 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-15:13:26 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-15:13:26 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-15:13:26 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-15:13:26 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-15:13:26 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-15:13:26 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-15:13:27 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-15:13:27 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-15:13:27 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-15:13:27 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-15:13:27 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-15:13:27 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-15:13:27 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-15:13:27 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-15:13:27 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-15:13:27 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-15:13:27 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-15:13:27 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-15:13:27 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-15:13:27 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-15:13:27 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-15:13:27 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-15:13:27 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-15:13:27 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-15:13:32 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
-15:13:32 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
-15:13:32 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
-15:13:32 [info] [GaplessTransport] stop
+19:03:29 [info] [LOG SESSION] ---------- START ----------
+19:03:29 [info] [PluginFactory] loading plugins
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpulseout.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsupereqdsp.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libstockencoders.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libtaglibreader.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libgmedecoder.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libffmpegdecoder.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libserver.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libopenmptdecoder.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libnullout.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libmpris.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsndioout.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpipewireout.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libalsaout.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libportaudioout.so
+19:03:29 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libhttpdatastream.so
+19:03:29 [info] [PortAudioOut] Pa_Initialize() return code: 0
+19:03:29 [info] [PipeWireOut] shutdown started
+19:03:29 [info] [PipeWireOut] shutdown complete
+19:03:29 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
+19:03:29 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
+19:03:29 [info] [PortAudioOut] Pa_Terminate() return code: 0
+19:03:29 [info] [Indexer] indexer source -1303229654 running...
+19:03:30 [info] [Indexer] indexer source -1303229654 finished
+19:03:30 [info] [Indexer] indexer source 155697690 running...
+19:03:30 [info] [LocalLibrary] query 'DirectoryTrackListQuery' enqueued
+19:03:30 [info] [LocalLibrary] query 'DirectoryTrackListQuery' running
+19:03:30 [info] [LocalLibrary] query 'DirectoryTrackListQuery' finished with status=4
+19:03:30 [info] [Indexer] indexer source 155697690 finished
+19:03:30 [info] [Indexer] scanning /home/rel/personal/music/
+19:03:30 [info] [Indexer] scan completed successfully
+19:03:30 [info] [Indexer] cleanup 1/2
+19:03:30 [info] [Indexer] cleanup 2/2
+19:03:30 [info] [Indexer] optimizing
+19:03:30 [info] [LocalLibrary] query 'DirectoryTrackListQuery' enqueued
+19:03:30 [info] [LocalLibrary] query 'DirectoryTrackListQuery' enqueued
+19:03:30 [info] [LocalLibrary] query 'DirectoryTrackListQuery' running
+19:03:30 [info] [LocalLibrary] query 'SearchTrackListQuery' enqueued
+19:03:30 [info] [Indexer] done!
+19:03:30 [info] [LocalLibrary] query 'DirectoryTrackListQuery' finished with status=4
+19:03:30 [info] [LocalLibrary] query 'DirectoryTrackListQuery' running
+19:03:30 [info] [LocalLibrary] query 'DirectoryTrackListQuery' finished with status=4
+19:03:30 [info] [LocalLibrary] query 'SearchTrackListQuery' running
+19:03:30 [info] [LocalLibrary] query 'SearchTrackListQuery' finished with status=4
+19:03:30 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
+19:03:30 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
+19:03:30 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
+19:03:30 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+19:03:30 [info] [LocalLibrary] query 'CategoryListQuery' running
+19:03:30 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+19:03:30 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+19:03:30 [info] [LocalLibrary] query 'CategoryListQuery' running
+19:03:30 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+19:03:30 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+19:03:30 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+19:03:30 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+19:03:30 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+19:03:30 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+19:03:30 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+19:03:30 [info] [GaplessTransport] starting track at /home/rel/personal/music/Pandai Besi - Melankolia.flac
+19:03:30 [info] [Player] new instance created
+19:03:30 [info] [GaplessTransport] stop
+19:03:30 [info] [Stream] opening /home/rel/personal/music/Pandai Besi - Melankolia.flac
+19:03:30 [info] [LocalFileStream] opening file: /home/rel/personal/music/Pandai Besi - Melankolia.flac
+19:03:30 [info] [ffmpegdecoder] parsing data stream...
+19:03:30 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+19:03:30 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+19:03:30 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+19:03:30 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+19:03:30 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+19:03:30 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+19:03:30 [info] [ffmpegdecoder] found audio stream!
+19:03:30 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+19:03:30 [info] [Streams] found a decoder for /home/rel/personal/music/Pandai Besi - Melankolia.flac
+19:03:30 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+19:03:32 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+19:03:32 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+19:03:32 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+19:03:32 [info] [GaplessTransport] starting track at /home/rel/personal/music/Bin Idris - Raya.flac
+19:03:32 [info] [Player] new instance created
+19:03:32 [info] [GaplessTransport] stop
+19:03:32 [info] [Stream] opening /home/rel/personal/music/Bin Idris - Raya.flac
+19:03:32 [info] [LocalFileStream] opening file: /home/rel/personal/music/Bin Idris - Raya.flac
+19:03:32 [info] [ffmpegdecoder] parsing data stream...
+19:03:32 [info] [ffmpegdecoder] found audio stream!
+19:03:32 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+19:03:32 [info] [Streams] found a decoder for /home/rel/personal/music/Bin Idris - Raya.flac
+19:03:32 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+19:03:32 [info] [Player] new instance created
+19:03:32 [info] [Stream] opening /home/rel/personal/music/Pandai Besi - Melankolia.flac
+19:03:32 [info] [LocalFileStream] opening file: /home/rel/personal/music/Pandai Besi - Melankolia.flac
+19:03:32 [info] [ffmpegdecoder] parsing data stream...
+19:03:32 [info] [ffmpegdecoder] found audio stream!
+19:03:32 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+19:03:32 [info] [Streams] found a decoder for /home/rel/personal/music/Pandai Besi - Melankolia.flac
+19:03:32 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+19:03:38 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+19:03:52 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
+19:03:52 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
+19:03:52 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
+19:05:01 [info] [GaplessTransport] pause
+19:05:02 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
+19:05:02 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
+19:05:02 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
+19:05:02 [info] [GaplessTransport] stop

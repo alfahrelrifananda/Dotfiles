@@ -64,7 +64,7 @@ window {
     border: 1px solid transparent;
     border-radius: 6px;
     background-color: rgba(30, 30, 46, 0.5);
-    transition: all 0.2s ease-in-out;
+    transition: all 0s ease-in-out;
 }
 
 #entry:hover {
