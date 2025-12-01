@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-    background: transparent;
+    background: #1e1e2e;
     color: #e0def4;
     border-radius: 6px;
     padding: 3px 6px;
