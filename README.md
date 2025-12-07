@@ -14,7 +14,6 @@ My personal configuration files for a minimal and efficient Wayland desktop envi
 - **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/) - A fast, feature-rich GPU-based terminal emulator
 - **System Info**: [Fastfetch](https://github.com/fastfetch-cli/fastfetch) - A neofetch-like tool with multiple presets
 - **Editor**: [Neovim](https://neovim.io/) - Hyperextensible Vim-based text editor
-- **System Monitor**: [btop](https://github.com/aristocratos/btop) - Resource monitor with a clean interface
 - **Audio Visualizer**: [Cava](https://github.com/karlstav/cava) - Console-based audio visualizer
 - **Music Player**: [musikcube](https://github.com/clangen/musikcube) - Terminal-based music player
 - **Media Player**: [mpv](https://mpv.io/) - Lightweight media player / [Celluloid](https://celluloid-player.github.io/) - GTK frontend for mpv
@@ -23,34 +22,16 @@ My personal configuration files for a minimal and efficient Wayland desktop envi
 - **IRC Client**: [WeeChat](https://weechat.org/) - Extensible chat client
 - **Bluetooth Manager**: [bluetuith](https://github.com/darkhz/bluetuith) - TUI-based Bluetooth manager
 
-## Features
-
-- Clean and minimal aesthetic
-- Optimized keybindings for productivity
-- **Custom Waybar modules**:
-  - Real-time internet speed monitor
-  - CPU usage graph with sparkline visualization
-  - Weather information with OpenWeatherMap integration
-  - VPN status and toggle functionality
-  - Power menu
-- Wofi configuration for quick application launching
-- Multiple Fastfetch presets and custom ASCII art
-- Smooth animations and transitions
-- Hypridle and Hyprlock for idle management and screen locking
-- Custom fonts (JetBrains Mono Nerd Font, SF Pro Display)
-
-## Installation
-
 ### Prerequisites
 
 Make sure you have the following installed:
 - Hyprland
+- Hyprlock
 - Waybar
 - Wofi
 - Kitty
 - Fastfetch
 - Neovim
-- btop
 - Cava
 - musikcube
 - mpv / Celluloid
@@ -59,7 +40,6 @@ Make sure you have the following installed:
 - WeeChat
 - bluetuith
 - Python 3 (for custom Waybar modules)
-- hypridle and hyprlock (optional, for idle management)
 
 ### Setup
 
@@ -78,7 +58,6 @@ cp -r ~/.config/wofi ~/.config-backup/ 2>/dev/null
 cp -r ~/.config/kitty ~/.config-backup/ 2>/dev/null
 cp -r ~/.config/fastfetch ~/.config-backup/ 2>/dev/null
 cp -r ~/.config/nvim ~/.config-backup/ 2>/dev/null
-cp -r ~/.config/btop ~/.config-backup/ 2>/dev/null
 cp -r ~/.config/cava ~/.config-backup/ 2>/dev/null
 cp -r ~/.config/musikcube ~/.config-backup/ 2>/dev/null
 cp -r ~/.config/mpv ~/.config-backup/ 2>/dev/null
@@ -94,7 +73,6 @@ cp -r wofi ~/.config/
 cp -r kitty ~/.config/
 cp -r fastfetch ~/.config/
 cp -r nvim ~/.config/
-cp -r btop ~/.config/
 cp -r cava ~/.config/
 cp -r musikcube ~/.config/
 cp -r mpv ~/.config/
