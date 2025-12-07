@@ -135,4 +135,4 @@ Feel free to modify any configuration files to suit your preferences. Key files:
 - Hyprland community for the amazing compositor
 - All the open-source projects that make this setup possible
 
-*Last updated: November 2025*
+*Last updated: December 2025*
